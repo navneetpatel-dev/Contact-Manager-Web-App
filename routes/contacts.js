@@ -1,6 +1,9 @@
 const express = require("express");
-
 const router = express.Router();
+const { check, validationResult } = require("express-validator");
+const User = require("../models/User");
+const Contact = require("../models/Contact");
+const auth = require("../middleware/auth");
 
 // @route       GET api/contacts
 // @desc        Get all users contacts (for specific user, u have to logged in first)
