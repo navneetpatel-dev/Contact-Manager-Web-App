@@ -8,7 +8,7 @@ import {
   CLEAR_FILTER,
 } from "../types";
 
-export default (state, action) => {
+export const contactReducer = (state, action) => {
   switch (action.type) {
     case ADD_CONTACT:
       return {
